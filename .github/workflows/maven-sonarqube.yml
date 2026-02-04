@@ -60,8 +60,25 @@ jobs:
           sonar-host-url: ${{ secrets.SONAR_URL }}
           sonar-project-key: ${{ secrets.SONAR_PROJECT_KEY }}    
 
-      - name: Build Docker image with Spring Boot
-        run: ./mvnw spring-boot:build-image -DskipTests
+      # Build image and give it the fully-qualified JFrog name
+      - name: Build Docker image with Spring Boot (image named for JFrog)
+        env:
+          IMAGE_NAME: ${{ secrets.JFROG_REGISTRY }}/${{ secrets.JFROG_REPO }}/petclinic:${{ github.sha }}
+        run: |
+          echo "Image name: $IMAGE_NAME"
+          # Buildpacks will create an image in the local docker daemon with this name
+          ./mvnw spring-boot:build-image -DskipTests -Dspring-boot.build-image.imageName=$IMAGE_NAME
 
-      - name: List Docker images
-        run: docker images | grep petclinic
+      - name: Log in to JFrog Docker registry
+        uses: docker/login-action@v2
+        with:
+          registry: ${{ secrets.JFROG_REGISTRY }}
+          username: ${{ secrets.JFROG_USERNAME }}
+          password: ${{ secrets.JFROG_PASSWORD }}
+
+      - name: Push image to JFrog Artifactory
+        env:
+          IMAGE_NAME: ${{ secrets.JFROG_REGISTRY }}/${{ secrets.JFROG_REPO }}/petclinic:${{ github.sha }}
+        run: |
+          echo "Pushing $IMAGE_NAME"
+          docker push $IMAGE_NAME
