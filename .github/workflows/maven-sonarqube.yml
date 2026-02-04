@@ -82,3 +82,13 @@ jobs:
         run: |
           echo "Pushing $IMAGE_NAME"
           docker push $IMAGE_NAME
+
+      - name: ServiceNow Register Artifact
+        uses: ServiceNow/servicenow-devops-register-artifact@v3.1.0
+        with:
+          devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
+          instance-url: ${{ secrets.SN_INSTANCE_URL }}
+          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
+          context-github: ${{ toJSON(github) }}
+          job-name: 'Register Artifact'
+          artifacts: '[{"name": "${{ secrets.JFROG_REGISTRY }}/${{ secrets.JFROG_REPO }}/petclinic","version": "${{ github.sha }}","semanticVersion": "${{ github.sha }}","repositoryName": "${{ github.repository }}"}]'
