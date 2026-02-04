@@ -91,4 +91,4 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
           job-name: 'Register Artifact'
-          artifacts: '[{"name": "${{ secrets.JFROG_REGISTRY }}/${{ secrets.JFROG_REPO }}/petclinic","version": "${{ github.sha }}","semanticVersion": "${{ github.sha }}","repositoryName": "${{ github.repository }}"}]'
+          artifacts: '[{"name": "${{ secrets.JFROG_REGISTRY }}/${{ secrets.JFROG_REPO }}/petclinic:${{ github.sha }}","version": "1.${{ github.run_number }}","semanticVersion": "1.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
