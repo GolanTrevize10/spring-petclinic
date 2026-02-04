@@ -47,7 +47,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
         run: |
           ./mvnw -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-            -Dsonar.host.url=https://sonarcloud.io
+            -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=golantrevize10
 
       - name: Build Docker image with Spring Boot
         run: ./mvnw spring-boot:build-image -DskipTests
