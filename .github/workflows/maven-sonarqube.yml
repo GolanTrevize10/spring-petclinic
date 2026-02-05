@@ -92,3 +92,23 @@ jobs:
           context-github: ${{ toJSON(github) }}
           job-name: 'Register Artifact'
           artifacts: '[{"name": "${{ secrets.JFROG_REGISTRY }}/${{ secrets.JFROG_REPO }}/petclinic:${{ github.sha }}","version": "1.${{ github.run_number }}","semanticVersion": "1.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
+
+  deployment:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Simulate deployment
+        run: |
+          echo "Deploying artifact to DEV environment"
+          sleep 5
+      - name: Register deployment in ServiceNow
+        uses: ServiceNow/servicenow-devops-register-deployment@v1
+        with:
+          devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
+          instance-url: ${{ secrets.SN_INSTANCE_URL }}
+          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
+          context-github: ${{ toJSON(github) }}
+      
+          deployment-name: "petclinic-prod-deploy"
+          environment-name: "PROD"
+          artifact-name: "${{ secrets.JFROG_REGISTRY }}/${{ secrets.JFROG_REPO }}/petclinic:${{ github.sha }}"
+          artifact-version: "1.${{ github.run_number }}"     
