@@ -76,10 +76,9 @@ class VetController {
 	}
 
 	public void insecureQuery(String userInput) throws Exception {
-	    java.sql.Connection connection = null;
-	    java.sql.Statement statement = connection.createStatement();
-	    statement.execute("SELECT * FROM users WHERE id = " + userInput);
+		java.sql.Connection connection = null;
+		java.sql.Statement statement = connection.createStatement();
+		statement.execute("SELECT * FROM users WHERE id = " + userInput);
 	}
-
 
 }
