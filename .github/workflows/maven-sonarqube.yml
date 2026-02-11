@@ -92,31 +92,26 @@ jobs:
           context-github: ${{ toJSON(github) }}
           job-name: 'Build'
           artifacts: '[{"name": "${{ secrets.JFROG_REGISTRY }}/${{ secrets.JFROG_REPO }}/petclinic:${{ github.sha }}","version": "1.${{ github.run_number }}","semanticVersion": "1.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
-  ServiceNowDevOpsChange:
-        # jobs that must complete successfully before this job will run
-        needs: build
-        # type of machine to run the job on
-        runs-on: ubuntu-latest
-        name: 'ServiceNow DevOps Change'
-        steps:
-          - name: ServiceNow Change
-            # Ensure to update to the latest version of the custom action, for e.g. ServiceNow/servicenow-devops-change@v5.1.0
-            uses: ServiceNow/servicenow-devops-change@v6.1.0
-            with:
-              # Devops Integration Token
-              devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
-              # ServiceNow Instance URL
-              instance-url: ${{ secrets.SN_INSTANCE_URL }}
-              # Orchestration Tool Id
-              tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
-              # GitHub Context
-              context-github: ${{ toJSON(github) }}
-              # Display Name of the Job
-              job-name: 'ServiceNow DevOps Change'
+      - name: ServiceNow Change
+        # Ensure to update to the latest version of the custom action, for e.g. ServiceNow/servicenow-devops-change@v5.1.0
+        uses: ServiceNow/servicenow-devops-change@v6.1.0
+        with:
+          # Devops Integration Token
+          devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
+          # ServiceNow Instance URL
+          instance-url: ${{ secrets.SN_INSTANCE_URL }}
+          # Orchestration Tool Id
+          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
+          # GitHub Context
+          context-github: ${{ toJSON(github) }}
+          # Display Name of the Job
+          job-name: 'Build'
+
+
 
   deployment:
       runs-on: ubuntu-latest
-      needs: ServiceNowDevOpsChange
+      needs: build
       steps:
       - name: Simulate deployment
         run: |
