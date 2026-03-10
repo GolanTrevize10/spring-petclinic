@@ -34,7 +34,7 @@ jobs:
           statusAttemptInterval: 5000
           businessApplicationId: 5e860ded83eb3210da7bbfc6feaad309
           lifecycleStage: production
-          
+          maxStatusPollAttempts: 10
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
