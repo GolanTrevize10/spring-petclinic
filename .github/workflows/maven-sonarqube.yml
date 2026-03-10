@@ -20,6 +20,20 @@ jobs:
         with:
           fetch-depth: 0  # Shallow clones should be disabled for better analysis relevancy
 
+      - name: Fetch and fix SBOM
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Download SBOM from dependency graph
+          gh api repos/${{ github.repository }}/dependency-graph/sbom \
+            --jq '.sbom' > sbom.spdx.json
+
+          # Patch the root package purpose from LIBRARY to APPLICATION
+          jq '(.packages[] | select(.SPDXID == "SPDXRef-com.github.${{ github.repository_owner }}/${{ github.event.repository.name }}") | .primaryPackagePurpose) = "APPLICATION"' \
+            sbom.spdx.json > sbom-patched.spdx.json
+
+          mv sbom-patched.spdx.json sbom.spdx.json
+
       - name: Upload
         id: upload
         uses: ServiceNow/vulnerability-response@v1.0.0
@@ -30,11 +44,12 @@ jobs:
           ghToken: ${{ secrets.GITHUB_TOKEN }}
           ghAccountOwner: GolanTrevize10
           repository: spring-petclinic
-          provider: 'dependencyGraph'
+          provider: 'repository'
           statusAttemptInterval: 5000
           businessApplicationId: 5e860ded83eb3210da7bbfc6feaad309
           lifecycleStage: production
           maxStatusPollAttempts: 5
+          path: sbom.spdx.json
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
