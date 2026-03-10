@@ -31,7 +31,8 @@ jobs:
           ghAccountOwner: GolanTrevize10
           repository: spring-petclinic
           provider: 'dependencyGraph'
-         
+          statusAttemptInterval: 5000
+          businessApplicationId: d44d78de833e3210da7bbfc6feaad357
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
