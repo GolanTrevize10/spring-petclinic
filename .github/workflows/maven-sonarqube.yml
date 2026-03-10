@@ -34,7 +34,28 @@ jobs:
 
           mv sbom-patched.spdx.json sbom.spdx.json
 
-      - name: Upload
+      - name: Push patched SBOM to repository
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="${{ github.head_ref || github.ref_name }}"
+          CONTENT=$(base64 -w 0 sbom.spdx.json)
+
+          # Get existing file SHA if it already exists on the branch
+          EXISTING_SHA=$(gh api "repos/${{ github.repository }}/contents/sbom.spdx.json?ref=$BRANCH" --jq '.sha' 2>/dev/null || true)
+
+          BODY=$(jq -n \
+            --arg message "chore: update SBOM [skip ci]" \
+            --arg content "$CONTENT" \
+            --arg branch "$BRANCH" \
+            --arg sha "$EXISTING_SHA" \
+            'if $sha == "" then {message: $message, content: $content, branch: $branch}
+             else {message: $message, content: $content, branch: $branch, sha: $sha} end')
+
+          gh api "repos/${{ github.repository }}/contents/sbom.spdx.json" \
+            -X PUT --input - <<< "$BODY"
+
+      - name: Upload SBOM to ServiceNow
         id: upload
         uses: ServiceNow/vulnerability-response@v1.0.0
         with:
@@ -45,11 +66,12 @@ jobs:
           ghAccountOwner: GolanTrevize10
           repository: spring-petclinic
           provider: 'repository'
+          path: sbom.spdx.json
+          ref: ${{ github.head_ref || github.ref_name }}
           statusAttemptInterval: 5000
           businessApplicationId: 5e860ded83eb3210da7bbfc6feaad309
           lifecycleStage: production
           maxStatusPollAttempts: 5
-          path: sbom.spdx.json
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
