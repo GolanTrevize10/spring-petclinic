@@ -27,7 +27,7 @@ jobs:
           snSbomUser: sbom_upload
           snSbomPassword: ${{ secrets.SN_SBOM_PASSWORD }}
           snInstanceUrl: ${{ secrets.SN_INSTANCE_URL }}
-          ghToken: ${{ secrets.GH_TOKEN }}
+          ghToken: ${{ secrets.GITHUB_TOKEN }}
           ghAccountOwner: GolanTrevize10
           repository: spring-petclinic
           provider: 'dependencyGraph'
