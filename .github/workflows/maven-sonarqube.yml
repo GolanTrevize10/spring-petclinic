@@ -22,7 +22,7 @@ jobs:
 
       - name: Upload
         id: upload
-        uses: ServiceNow/vulnerability-response@2.0.1
+        uses: ServiceNow/vulnerability-response@v1.0.0
         with:
           snSbomUser: sbom_upload
           snSbomPassword: ${{ secrets.SN_SBOM_PASSWORD }}
