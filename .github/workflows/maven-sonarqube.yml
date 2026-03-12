@@ -128,12 +128,12 @@ jobs:
           username: ${{ secrets.JFROG_USERNAME }}
           password: ${{ secrets.JFROG_PASSWORD }}
 
-      - name: Push image to JFrog Artifactory
-        env:
-          IMAGE_NAME: ${{ secrets.JFROG_REGISTRY }}/${{ secrets.JFROG_REPO }}/petclinic:${{ github.sha }}
-        run: |
-          echo "Pushing $IMAGE_NAME"
-          docker push $IMAGE_NAME
+#      - name: Push image to JFrog Artifactory
+#        env:
+#          IMAGE_NAME: ${{ secrets.JFROG_REGISTRY }}/${{ secrets.JFROG_REPO }}/petclinic:${{ github.sha }}
+#        run: |
+#          echo "Pushing $IMAGE_NAME"
+#          docker push $IMAGE_NAME
 
       - name: ServiceNow Register Artifact
         uses: ServiceNow/servicenow-devops-register-artifact@v3.1.0
