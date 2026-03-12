@@ -158,12 +158,13 @@ jobs:
           context-github: ${{ toJSON(github) }}
           # Display Name of the Job
           job-name: 'Build'
-
+          deployment-gate: '{"environment":"prod","jobName":"deployment"}'
 
 
   deployment:
       runs-on: ubuntu-latest
       needs: build
+      environment: prod
       steps:
       - name: Simulate deployment
         run: |
