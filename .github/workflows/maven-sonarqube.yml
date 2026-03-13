@@ -135,15 +135,15 @@ jobs:
 #          echo "Pushing $IMAGE_NAME"
 #          docker push $IMAGE_NAME
 
-      - name: ServiceNow Register Artifact
-        uses: ServiceNow/servicenow-devops-register-artifact@v3.1.0
-        with:
-          devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
-          instance-url: ${{ secrets.SN_INSTANCE_URL }}
-          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
-          context-github: ${{ toJSON(github) }}
-          job-name: 'Build'
-          artifacts: '[{"name": "${{ secrets.JFROG_REGISTRY }}/${{ secrets.JFROG_REPO }}/petclinic:${{ github.sha }}","version": "1.${{ github.run_number }}","semanticVersion": "1.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
+#      - name: ServiceNow Register Artifact
+#        uses: ServiceNow/servicenow-devops-register-artifact@v3.1.0
+#        with:
+#          devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
+#          instance-url: ${{ secrets.SN_INSTANCE_URL }}
+#          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
+#          context-github: ${{ toJSON(github) }}
+#          job-name: 'Build'
+#          artifacts: '[{"name": "${{ secrets.JFROG_REGISTRY }}/${{ secrets.JFROG_REPO }}/petclinic:${{ github.sha }}","version": "1.${{ github.run_number }}","semanticVersion": "1.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
       - name: ServiceNow Change
         # Ensure to update to the latest version of the custom action, for e.g. ServiceNow/servicenow-devops-change@v5.1.0
         uses: ServiceNow/servicenow-devops-change@v6.1.0
