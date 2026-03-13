@@ -157,8 +157,8 @@ jobs:
           # GitHub Context
           context-github: ${{ toJSON(github) }}
           # Display Name of the Job
-          job-name: 'Build'
-          deployment-gate: '{"environment":"prod","jobName":"deployment"}'
+          job-name: 'build'
+#          deployment-gate: '{"environment":"prod","jobName":"deployment"}'
 
 
   deployment:
