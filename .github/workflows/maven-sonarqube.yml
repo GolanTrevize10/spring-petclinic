@@ -159,7 +159,7 @@ jobs:
           # Display Name of the Job
           job-name: 'Build'
           deployment-gate: '{"environment":"prod","jobName":"Deploy"}'
-
+          change-request: '{"changeModel":"adffaa9e4370211072b7f6be5bb8f2ed"}'
 
   deployment:
       runs-on: ubuntu-latest
