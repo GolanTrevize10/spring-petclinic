@@ -2,57 +2,43 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "comment": "Exact versions could not be resolved for some packages. For more information: https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph#dependencies-included.",
   "creationInfo": {
-    "created": "2026-03-13T16:31:56Z",
+    "created": "2026-03-13T16:40:52Z",
     "creators": [
       "Tool: protobom-v0.0.0-20260311140609-2219a6430415+dirty",
       "Tool: GitHub.com-Dependency-Graph"
     ]
   },
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "https://spdx.org/spdxdocs/protobom/e101032b-b43e-4ee6-907a-087d42eb64b9",
+  "documentNamespace": "https://spdx.org/spdxdocs/protobom/4565ce8c-ffeb-4703-a0c3-310376626d29",
   "name": "com.github.GolanTrevize10/spring-petclinic",
   "packages": [
     {
-      "SPDXID": "SPDXRef-githubactions-actions-checkout-4..-75c946",
+      "SPDXID": "SPDXRef-githubactions-ServiceNow-servicenow-devops-sonar-3.1.0-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:githubactions/actions/checkout@4.%2A.%2A",
+          "referenceLocator": "pkg:githubactions/ServiceNow/servicenow-devops-sonar@3.1.0",
           "referenceType": "purl"
         }
       ],
       "filesAnalyzed": false,
-      "name": "actions/checkout",
-      "versionInfo": "4.*.*"
+      "name": "ServiceNow/servicenow-devops-sonar",
+      "versionInfo": "3.1.0"
     },
     {
-      "SPDXID": "SPDXRef-githubactions-actions-setup-java-4..-75c946",
+      "SPDXID": "SPDXRef-githubactions-docker-login-action-2..-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:githubactions/actions/setup-java@4.%2A.%2A",
+          "referenceLocator": "pkg:githubactions/docker/login-action@2.%2A.%2A",
           "referenceType": "purl"
         }
       ],
       "filesAnalyzed": false,
-      "name": "actions/setup-java",
-      "versionInfo": "4.*.*"
-    },
-    {
-      "SPDXID": "SPDXRef-githubactions-gradleactions-setup-gradle-4..-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:githubactions/gradle/actions/setup-gradle@4.%2A.%2A",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "gradle/actions/setup-gradle",
-      "versionInfo": "4.*.*"
+      "name": "docker/login-action",
+      "versionInfo": "2.*.*"
     },
     {
       "SPDXID": "SPDXRef-githubactions-actions-cache-4..-75c946",
@@ -97,32 +83,59 @@
       "versionInfo": "6.1.0"
     },
     {
-      "SPDXID": "SPDXRef-githubactions-ServiceNow-servicenow-devops-sonar-3.1.0-75c946",
+      "SPDXID": "SPDXRef-maven-io.spring.javaformat-spring-javaformat-maven-plugin-0.0.47-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:githubactions/ServiceNow/servicenow-devops-sonar@3.1.0",
+          "referenceLocator": "pkg:maven/io.spring.javaformat/spring-javaformat-maven-plugin@0.0.47",
           "referenceType": "purl"
         }
       ],
       "filesAnalyzed": false,
-      "name": "ServiceNow/servicenow-devops-sonar",
-      "versionInfo": "3.1.0"
+      "name": "io.spring.javaformat:spring-javaformat-maven-plugin",
+      "versionInfo": "0.0.47"
     },
     {
-      "SPDXID": "SPDXRef-githubactions-docker-login-action-2..-75c946",
+      "SPDXID": "SPDXRef-maven-org.webjars-webjars-locator-lite-1.1.2-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:githubactions/docker/login-action@2.%2A.%2A",
+          "referenceLocator": "pkg:maven/org.webjars/webjars-locator-lite@1.1.2",
           "referenceType": "purl"
         }
       ],
       "filesAnalyzed": false,
-      "name": "docker/login-action",
-      "versionInfo": "2.*.*"
+      "licenseConcluded": "MIT",
+      "name": "org.webjars:webjars-locator-lite",
+      "versionInfo": "1.1.2"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.testcontainers-testcontainers-junit-jupiter-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.testcontainers/testcontainers-junit-jupiter",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.testcontainers:testcontainers-junit-jupiter"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.testcontainers-testcontainers-mysql-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.testcontainers/testcontainers-mysql",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.testcontainers:testcontainers-mysql"
     },
     {
       "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-maven-plugin-75c946",
@@ -138,56 +151,88 @@
       "name": "org.springframework.boot:spring-boot-maven-plugin"
     },
     {
-      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-data-jpa-75c946",
+      "SPDXID": "SPDXRef-maven-jakarta.xml.bind-jakarta.xml.bind-api-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa",
+          "referenceLocator": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api",
           "referenceType": "purl"
         }
       ],
       "filesAnalyzed": false,
-      "name": "org.springframework.boot:spring-boot-starter-data-jpa"
+      "name": "jakarta.xml.bind:jakarta.xml.bind-api"
     },
     {
-      "SPDXID": "SPDXRef-maven-org.graalvm.buildtools-native-maven-plugin-75c946",
+      "SPDXID": "SPDXRef-maven-org.webjars.npm-bootstrap-5.3.8-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.graalvm.buildtools/native-maven-plugin",
+          "referenceLocator": "pkg:maven/org.webjars.npm/bootstrap@5.3.8",
           "referenceType": "purl"
         }
       ],
       "filesAnalyzed": false,
-      "name": "org.graalvm.buildtools:native-maven-plugin"
+      "name": "org.webjars.npm:bootstrap",
+      "versionInfo": "5.3.8"
     },
     {
-      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-actuator-75c946",
+      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-data-jpa-test-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-actuator",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa-test",
           "referenceType": "purl"
         }
       ],
       "filesAnalyzed": false,
-      "name": "org.springframework.boot:spring-boot-starter-actuator"
+      "name": "org.springframework.boot:spring-boot-starter-data-jpa-test"
     },
     {
-      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-docker-compose-75c946",
+      "SPDXID": "SPDXRef-maven-org.apache.maven.plugins-maven-checkstyle-plugin-3.6.0-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-docker-compose",
+          "referenceLocator": "pkg:maven/org.apache.maven.plugins/maven-checkstyle-plugin@3.6.0",
           "referenceType": "purl"
         }
       ],
       "filesAnalyzed": false,
-      "name": "org.springframework.boot:spring-boot-docker-compose"
+      "licenseConcluded": "Apache-2.0",
+      "name": "org.apache.maven.plugins:maven-checkstyle-plugin",
+      "versionInfo": "3.6.0"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-devtools-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-devtools",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.springframework.boot:spring-boot-devtools"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.webjars.npm-font-awesome-4.7.0-75c946",
+      "copyrightText": "Copyright Dave Gandy 2016",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.webjars.npm/font-awesome@4.7.0",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "licenseConcluded": "OFL-1.1",
+      "name": "org.webjars.npm:font-awesome",
+      "versionInfo": "4.7.0"
     },
     {
       "SPDXID": "SPDXRef-maven-org.apache.maven.plugins-maven-enforcer-plugin-17-75c946",
@@ -217,113 +262,6 @@
       "name": "org.springframework.boot:spring-boot-starter-webmvc"
     },
     {
-      "SPDXID": "SPDXRef-maven-io.spring.javaformat-spring-javaformat-maven-plugin-0.0.47-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/io.spring.javaformat/spring-javaformat-maven-plugin@0.0.47",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "io.spring.javaformat:spring-javaformat-maven-plugin",
-      "versionInfo": "0.0.47"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-org.webjars.npm-bootstrap-5.3.8-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.webjars.npm/bootstrap@5.3.8",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "org.webjars.npm:bootstrap",
-      "versionInfo": "5.3.8"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-webmvc-test-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-webmvc-test",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "org.springframework.boot:spring-boot-starter-webmvc-test"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-com.mysql-mysql-connector-j-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/com.mysql/mysql-connector-j",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "com.mysql:mysql-connector-j"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-thymeleaf-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-thymeleaf",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "org.springframework.boot:spring-boot-starter-thymeleaf"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-cache-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-cache",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "org.springframework.boot:spring-boot-starter-cache"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-org.cyclonedx-cyclonedx-maven-plugin-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.cyclonedx/cyclonedx-maven-plugin",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "org.cyclonedx:cyclonedx-maven-plugin"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-com.gitlab.haynes-libsass-maven-plugin-0.3.4-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/com.gitlab.haynes/libsass-maven-plugin@0.3.4",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "com.gitlab.haynes:libsass-maven-plugin",
-      "versionInfo": "0.3.4"
-    },
-    {
       "SPDXID": "SPDXRef-maven-com.puppycrawl.tools-checkstyle-12.1.2-75c946",
       "copyrightText": "Copyright (c) 2001-2025 the original author or authors",
       "downloadLocation": "NOASSERTION",
@@ -340,97 +278,17 @@
       "versionInfo": "12.1.2"
     },
     {
-      "SPDXID": "SPDXRef-maven-org.apache.maven.plugins-maven-checkstyle-plugin-3.6.0-75c946",
+      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-actuator-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.apache.maven.plugins/maven-checkstyle-plugin@3.6.0",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-actuator",
           "referenceType": "purl"
         }
       ],
       "filesAnalyzed": false,
-      "licenseConcluded": "Apache-2.0",
-      "name": "org.apache.maven.plugins:maven-checkstyle-plugin",
-      "versionInfo": "3.6.0"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-org.testcontainers-testcontainers-mysql-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.testcontainers/testcontainers-mysql",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "org.testcontainers:testcontainers-mysql"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-data-jpa-test-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa-test",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "org.springframework.boot:spring-boot-starter-data-jpa-test"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-com.h2database-h2-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/com.h2database/h2",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "com.h2database:h2"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-validation-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-validation",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "org.springframework.boot:spring-boot-starter-validation"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-jakarta.xml.bind-jakarta.xml.bind-api-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "jakarta.xml.bind:jakarta.xml.bind-api"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-com.github.ben-manes.caffeine-caffeine-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/com.github.ben-manes.caffeine/caffeine",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "com.github.ben-manes.caffeine:caffeine"
+      "name": "org.springframework.boot:spring-boot-starter-actuator"
     },
     {
       "SPDXID": "SPDXRef-maven-javax.cache-cache-api-75c946",
@@ -446,35 +304,43 @@
       "name": "javax.cache:cache-api"
     },
     {
-      "SPDXID": "SPDXRef-maven-org.webjars.npm-font-awesome-4.7.0-75c946",
-      "copyrightText": "Copyright Dave Gandy 2016",
+      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-webmvc-test-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.webjars.npm/font-awesome@4.7.0",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-webmvc-test",
           "referenceType": "purl"
         }
       ],
       "filesAnalyzed": false,
-      "licenseConcluded": "OFL-1.1",
-      "name": "org.webjars.npm:font-awesome",
-      "versionInfo": "4.7.0"
+      "name": "org.springframework.boot:spring-boot-starter-webmvc-test"
     },
     {
-      "SPDXID": "SPDXRef-maven-org.webjars-webjars-locator-lite-1.1.2-75c946",
+      "SPDXID": "SPDXRef-maven-com.h2database-h2-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.webjars/webjars-locator-lite@1.1.2",
+          "referenceLocator": "pkg:maven/com.h2database/h2",
           "referenceType": "purl"
         }
       ],
       "filesAnalyzed": false,
-      "licenseConcluded": "MIT",
-      "name": "org.webjars:webjars-locator-lite",
-      "versionInfo": "1.1.2"
+      "name": "com.h2database:h2"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-cache-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-cache",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.springframework.boot:spring-boot-starter-cache"
     },
     {
       "SPDXID": "SPDXRef-maven-io.github.git-commit-id-git-commit-id-maven-plugin-75c946",
@@ -488,6 +354,112 @@
       ],
       "filesAnalyzed": false,
       "name": "io.github.git-commit-id:git-commit-id-maven-plugin"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-docker-compose-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-docker-compose",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.springframework.boot:spring-boot-docker-compose"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-com.mysql-mysql-connector-j-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/com.mysql/mysql-connector-j",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "com.mysql:mysql-connector-j"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-testcontainers-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-testcontainers",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.springframework.boot:spring-boot-testcontainers"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.graalvm.buildtools-native-maven-plugin-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.graalvm.buildtools/native-maven-plugin",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.graalvm.buildtools:native-maven-plugin"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-com.gitlab.haynes-libsass-maven-plugin-0.3.4-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/com.gitlab.haynes/libsass-maven-plugin@0.3.4",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "com.gitlab.haynes:libsass-maven-plugin",
+      "versionInfo": "0.3.4"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.postgresql-postgresql-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.postgresql/postgresql",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.postgresql:postgresql"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-validation-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-validation",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.springframework.boot:spring-boot-starter-validation"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.eclipse.m2e-lifecycle-mapping-1.0.0-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.eclipse.m2e/lifecycle-mapping@1.0.0",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.eclipse.m2e:lifecycle-mapping",
+      "versionInfo": "1.0.0"
     },
     {
       "SPDXID": "SPDXRef-maven-io.spring.nohttp-nohttp-checkstyle-0.0.11-75c946",
@@ -506,6 +478,32 @@
       "versionInfo": "0.0.11"
     },
     {
+      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-restclient-test-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-restclient-test",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.springframework.boot:spring-boot-starter-restclient-test"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-thymeleaf-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-thymeleaf",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.springframework.boot:spring-boot-starter-thymeleaf"
+    },
+    {
       "SPDXID": "SPDXRef-maven-org.apache.maven.plugins-maven-dependency-plugin-5.3.8-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
@@ -518,6 +516,45 @@
       "filesAnalyzed": false,
       "name": "org.apache.maven.plugins:maven-dependency-plugin",
       "versionInfo": "5.3.8"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.cyclonedx-cyclonedx-maven-plugin-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.cyclonedx/cyclonedx-maven-plugin",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.cyclonedx:cyclonedx-maven-plugin"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-data-jpa-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-data-jpa",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "org.springframework.boot:spring-boot-starter-data-jpa"
+    },
+    {
+      "SPDXID": "SPDXRef-maven-com.github.ben-manes.caffeine-caffeine-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:maven/com.github.ben-manes.caffeine/caffeine",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "com.github.ben-manes.caffeine:caffeine"
     },
     {
       "SPDXID": "SPDXRef-maven-org.jacoco-jacoco-maven-plugin-0.8.14-75c946",
@@ -536,83 +573,18 @@
       "versionInfo": "0.8.14"
     },
     {
-      "SPDXID": "SPDXRef-maven-org.testcontainers-testcontainers-junit-jupiter-75c946",
+      "SPDXID": "SPDXRef-githubactions-actions-checkout-2..-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.testcontainers/testcontainers-junit-jupiter",
+          "referenceLocator": "pkg:githubactions/actions/checkout@2.%2A.%2A",
           "referenceType": "purl"
         }
       ],
       "filesAnalyzed": false,
-      "name": "org.testcontainers:testcontainers-junit-jupiter"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-restclient-test-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-restclient-test",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "org.springframework.boot:spring-boot-starter-restclient-test"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-devtools-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-devtools",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "org.springframework.boot:spring-boot-devtools"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-org.postgresql-postgresql-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.postgresql/postgresql",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "org.postgresql:postgresql"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-org.eclipse.m2e-lifecycle-mapping-1.0.0-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.eclipse.m2e/lifecycle-mapping@1.0.0",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "org.eclipse.m2e:lifecycle-mapping",
-      "versionInfo": "1.0.0"
-    },
-    {
-      "SPDXID": "SPDXRef-maven-org.springframework.boot-spring-boot-testcontainers-75c946",
-      "downloadLocation": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-testcontainers",
-          "referenceType": "purl"
-        }
-      ],
-      "filesAnalyzed": false,
-      "name": "org.springframework.boot:spring-boot-testcontainers"
+      "name": "actions/checkout",
+      "versionInfo": "2.*.*"
     },
     {
       "SPDXID": "SPDXRef-githubactions-helm-kind-action-1..-75c946",
@@ -629,18 +601,46 @@
       "versionInfo": "1.*.*"
     },
     {
-      "SPDXID": "SPDXRef-githubactions-actions-checkout-2..-75c946",
+      "SPDXID": "SPDXRef-githubactions-actions-setup-java-4..-75c946",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [
         {
           "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:githubactions/actions/checkout@2.%2A.%2A",
+          "referenceLocator": "pkg:githubactions/actions/setup-java@4.%2A.%2A",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "actions/setup-java",
+      "versionInfo": "4.*.*"
+    },
+    {
+      "SPDXID": "SPDXRef-githubactions-gradleactions-setup-gradle-4..-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:githubactions/gradle/actions/setup-gradle@4.%2A.%2A",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false,
+      "name": "gradle/actions/setup-gradle",
+      "versionInfo": "4.*.*"
+    },
+    {
+      "SPDXID": "SPDXRef-githubactions-actions-checkout-4..-75c946",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:githubactions/actions/checkout@4.%2A.%2A",
           "referenceType": "purl"
         }
       ],
       "filesAnalyzed": false,
       "name": "actions/checkout",
-      "versionInfo": "2.*.*"
+      "versionInfo": "4.*.*"
     },
     {
       "SPDXID": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071",
@@ -660,27 +660,7 @@
   ],
   "relationships": [
     {
-      "relatedSpdxElement": "SPDXRef-maven-javax.cache-cache-api-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.jacoco-jacoco-maven-plugin-0.8.14-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.postgresql-postgresql-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-githubactions-ServiceNow-vulnerability-response-1.0.0-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-githubactions-ServiceNow-servicenow-devops-sonar-3.1.0-75c946",
+      "relatedSpdxElement": "SPDXRef-githubactions-actions-checkout-4..-75c946",
       "relationshipType": "DEPENDS_ON",
       "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
     },
@@ -690,97 +670,12 @@
       "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
     },
     {
-      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-webmvc-75c946",
+      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-data-jpa-75c946",
       "relationshipType": "DEPENDS_ON",
       "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
     },
     {
-      "relatedSpdxElement": "SPDXRef-maven-com.mysql-mysql-connector-j-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.cyclonedx-cyclonedx-maven-plugin-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-data-jpa-test-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-devtools-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-githubactions-actions-setup-java-4..-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-jakarta.xml.bind-jakarta.xml.bind-api-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-com.github.ben-manes.caffeine-caffeine-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.testcontainers-testcontainers-junit-jupiter-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.eclipse.m2e-lifecycle-mapping-1.0.0-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-testcontainers-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-maven-plugin-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-io.spring.javaformat-spring-javaformat-maven-plugin-0.0.47-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.webjars.npm-bootstrap-5.3.8-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.apache.maven.plugins-maven-dependency-plugin-5.3.8-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-githubactions-helm-kind-action-1..-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-com.gitlab.haynes-libsass-maven-plugin-0.3.4-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-com.puppycrawl.tools-checkstyle-12.1.2-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.testcontainers-testcontainers-mysql-75c946",
+      "relatedSpdxElement": "SPDXRef-maven-org.jacoco-jacoco-maven-plugin-0.8.14-75c946",
       "relationshipType": "DEPENDS_ON",
       "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
     },
@@ -790,67 +685,32 @@
       "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
     },
     {
-      "relatedSpdxElement": "SPDXRef-githubactions-ServiceNow-servicenow-devops-change-6.1.0-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-cache-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.apache.maven.plugins-maven-checkstyle-plugin-3.6.0-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-validation-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.webjars.npm-font-awesome-4.7.0-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.webjars-webjars-locator-lite-1.1.2-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-githubactions-actions-cache-4..-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-docker-compose-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-webmvc-test-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-maven-io.github.git-commit-id-git-commit-id-maven-plugin-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
-      "relatedSpdxElement": "SPDXRef-githubactions-actions-checkout-4..-75c946",
-      "relationshipType": "DEPENDS_ON",
-      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
-    },
-    {
       "relatedSpdxElement": "SPDXRef-githubactions-gradleactions-setup-gradle-4..-75c946",
       "relationshipType": "DEPENDS_ON",
       "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
     },
     {
-      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-data-jpa-75c946",
+      "relatedSpdxElement": "SPDXRef-githubactions-ServiceNow-servicenow-devops-sonar-3.1.0-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-githubactions-ServiceNow-vulnerability-response-1.0.0-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-io.spring.javaformat-spring-javaformat-maven-plugin-0.0.47-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-jakarta.xml.bind-jakarta.xml.bind-api-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-data-jpa-test-75c946",
       "relationshipType": "DEPENDS_ON",
       "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
     },
@@ -860,7 +720,32 @@
       "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
     },
     {
-      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-thymeleaf-75c946",
+      "relatedSpdxElement": "SPDXRef-maven-com.h2database-h2-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-io.github.git-commit-id-git-commit-id-maven-plugin-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-githubactions-ServiceNow-servicenow-devops-change-6.1.0-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.webjars.npm-font-awesome-4.7.0-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-actuator-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.postgresql-postgresql-75c946",
       "relationshipType": "DEPENDS_ON",
       "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
     },
@@ -875,17 +760,132 @@
       "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
     },
     {
+      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-thymeleaf-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
       "relatedSpdxElement": "SPDXRef-githubactions-docker-login-action-2..-75c946",
       "relationshipType": "DEPENDS_ON",
       "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
     },
     {
-      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-actuator-75c946",
+      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-devtools-75c946",
       "relationshipType": "DEPENDS_ON",
       "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
     },
     {
-      "relatedSpdxElement": "SPDXRef-maven-com.h2database-h2-75c946",
+      "relatedSpdxElement": "SPDXRef-maven-com.puppycrawl.tools-checkstyle-12.1.2-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-javax.cache-cache-api-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-com.gitlab.haynes-libsass-maven-plugin-0.3.4-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-githubactions-actions-setup-java-4..-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.testcontainers-testcontainers-junit-jupiter-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.testcontainers-testcontainers-mysql-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.webjars.npm-bootstrap-5.3.8-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.apache.maven.plugins-maven-checkstyle-plugin-3.6.0-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-docker-compose-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-com.mysql-mysql-connector-j-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-testcontainers-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-githubactions-actions-cache-4..-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.webjars-webjars-locator-lite-1.1.2-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-maven-plugin-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-webmvc-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-cache-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.cyclonedx-cyclonedx-maven-plugin-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-com.github.ben-manes.caffeine-caffeine-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-githubactions-helm-kind-action-1..-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-webmvc-test-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.springframework.boot-spring-boot-starter-validation-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.eclipse.m2e-lifecycle-mapping-1.0.0-75c946",
+      "relationshipType": "DEPENDS_ON",
+      "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-maven-org.apache.maven.plugins-maven-dependency-plugin-5.3.8-75c946",
       "relationshipType": "DEPENDS_ON",
       "spdxElementId": "SPDXRef-github-GolanTrevize10-spring-petclinic-main-b8f071"
     },
