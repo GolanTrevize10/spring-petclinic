@@ -33,8 +33,7 @@ jobs:
           ghToken: ${{ secrets.GITHUB_TOKEN }}
           ghAccountOwner: GolanTrevize10
           repository: spring-petclinic
-          provider: 'repository'
-          path: sbom.spdx.json
+          provider: 'dependencyGraph'
           ref: ${{ github.head_ref || github.ref_name }}
           statusAttemptInterval: 5000
           businessApplicationId: 5e860ded83eb3210da7bbfc6feaad309
